@@ -23,10 +23,6 @@ export default function AppTask4() {
 
     const handleSearch = () => {
         const filteredWorkers = state.filter((element) => {
-            // const searchingName = [...input].join("");
-            // if(element.name === searchingName){
-            //     return element.name === searchingName;
-            // }
             return element.name.includes(input);
         })
         setFiltered(filteredWorkers);
@@ -39,10 +35,6 @@ export default function AppTask4() {
 
     const handleSort = () => {
         const filteredDepartment = state.filter((element) => {
-            // const departmentName = [...department].join("");
-            // if(element.department === departmentName){
-            //     return element.department === departmentName;
-            // }
             return element.department.includes(department);
         })
         setFiltered(filteredDepartment);
