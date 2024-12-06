@@ -1,0 +1,20 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.navbar-links {
+    display: flex;
+    list-style-type: none;
+    background-color: beige;
+    margin: 0px;
+    padding: 10px;
+    justify-content: flex-start;
+
+}
+
+.navbar-links li a{
+    margin-right: 30px;
+    text-decoration: none;
+    font-size: 20px;
+}

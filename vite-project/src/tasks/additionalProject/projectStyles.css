@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    font-weight: bold;
+    font-size: 18px;
+    font-family: "Roboto", serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+    align-items: center;
+    border: 1px solid silver;
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+    max-width: 600px;
+    background: linear-gradient(135deg, yellow 40%, black);
+}
+
+label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+}
+
+input {
+    padding: 10px;
+    border: 2px solid black;
+    width: 200px;
+    border-radius: 5px;
+}
+
+input:focus {
+    background-color: yellow;
+}
+
+.add, .update {
+    border: none;
+    padding: 10px 20px;
+    background-color: black;
+    color: yellow;
+    border: 2px solid yellow;
+    border-radius: 50px;
+    cursor: pointer;
+    width: 200px;
+}
+
+.add:hover, .update:hover {
+    background-color: yellow;
+    color:black;
+    font-weight: bold;
+    border: 2px solid black;
+}
+
+.container {
+    margin-top: 10px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+    /* display: none; */
+    max-width: 700px;
+    padding: 20px;
+    /* flex-direction: column; */
+    align-items: center;
+    border: 3px solid black;
+    border-radius: 5px;
+    background: linear-gradient(135deg, yellow 40%, black);
+    background-color: yellow;
+}
+
+.mainDiv {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    width: 100%;
+    padding: 10px 0px;
+}
+
+.card {
+    border: 2px solid yellow;
+    border-radius: 5px;
+    padding: 5px;
+    text-align: center;
+    width: 100px;
+    height: 170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: black;
+    color: yellow;
+}
+
+.remove:hover {
+    background-color: red;
+}
+
+p {
+    margin: 2px 0px;
+    font-weight: normal;
+}
+
+.edit {
+    border-radius: 3px;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: black;
+}
+
+.editDiv {
+    display: flex;
+    gap: 5px;
+    margin-top: 5px;
+}
+
+.edit1:hover {
+    background-color: yellowgreen;
+}
+
+.edit2:hover {
+    background-color: orangered;
+}
+
+.edit1 {
+    color: white;
+}
+
+@media(max-width: 375px) {
+    .wrapper {
+      width: 100%;
+    }
+
+    label {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .add, .update {
+      font-size: 16px;
+      width: 80%;
+    }
+
+    input {
+        width: 80%;
+    } 
+}
+
+.modal {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    display: none;
+    margin-top: 15px;
+}
+
+.modal.open {
+    display: block;
+}
+
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.color {
+    display: flex;
+    gap: 10px;
+}
