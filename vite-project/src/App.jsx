@@ -6,9 +6,10 @@ import AppTask4 from './tasks/task4/AppTask4';
 import AppProject from './tasks/additionalProject/AppProject';
 import AppTask5 from './tasks/task5/AppTask5';
 import AppTask6 from './tasks/task6/AppTask6';
+import AppTask7 from './tasks/task7/AppTask7';
 
 const App = () => {
-  return <AppTask6/>
+  return <AppTask7/>
 }
 
 export default App;
